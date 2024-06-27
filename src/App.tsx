@@ -17,7 +17,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="w-[100vw] h-[100vh] flex justify-start items-center bg-blue-600 py-10 px-12 flex-col">
+    <div className="w-[100vw] h-[100dvh] flex flex-grow justify-start items-center bg-blue-600 py-10 px-12 flex-col">
       <h1 className="font-bold text-3xl uppercase text-white">Tasker</h1>
       <InputField
         todo={todo}

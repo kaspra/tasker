@@ -9,9 +9,9 @@ interface Props {
 
 const TodoList: React.FC<Props> = ({ todos, setTodos }) => {
   return (
-    <div className="mt-6 flex flex-wrap row gap-6 justify-center">
+    <div className="mt-6 flex flex-wrap row gap-6 justify-center ">
       {todos.map((todo) => (
-        <TodoCard todo={todo} setTodos={setTodos} />
+        <TodoCard todo={todo} setTodos={setTodos} todos={todos} />
       ))}
     </div>
   );
