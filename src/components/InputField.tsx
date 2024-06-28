@@ -17,11 +17,11 @@ const InputField: React.FC<Props> = ({ todo, setTodo, handleAddTodos }) => {
         placeholder="Enter a task"
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
-        className="w-[100dvw] rounded-full p-3 border-none placeholder:text-gray-500 focus:outline-none"
+        className="w-[100dvw] rounded-lg p-3 border-none placeholder:text-gray-500 focus:outline-none"
       />
       <button
         type="submit"
-        className="absolute right-0 border-none rounded-full bg-blue-500 text-white font-semibold p-2 mr-2 hover:bg-blue-700"
+        className="absolute right-0 border-none rounded-lg bg-blue-500 text-white font-semibold p-2 mr-2 hover:bg-blue-700"
       >
         GO
       </button>
