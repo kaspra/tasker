@@ -55,7 +55,7 @@ const TodoCard: React.FC<Props> = ({
     <Draggable index={index} draggableId={todo.id.toString()}>
       {(provided) => (
         <form
-          className={`flex bg-gray-50 rounded-lg w-[80dvw] sm:w-[40dvw] md:w-[26dvw] py-2 px-3 justify-between items-center`}
+          className={`flex bg-gray-50 rounded-lg w-full py-2 px-3 justify-between items-center`}
           onSubmit={(e) => handleEdit(e, todo.id)}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
@@ -76,12 +76,24 @@ const TodoCard: React.FC<Props> = ({
           )}
 
           <div className="flex flex-row justify-center items-center gap-2">
-            <MdEdit onClick={() => setEditStatus(true)} />
-            <MdDelete onClick={() => handleDelete(todo.id)} />
+            <MdEdit
+              onClick={() => setEditStatus(true)}
+              className="hover:cursor-pointer"
+            />
+            <MdDelete
+              onClick={() => handleDelete(todo.id)}
+              className="hover:cursor-pointer"
+            />
             {todo.isDone ? (
-              <RxCross2 onClick={() => handleDone(todo.id)} />
+              <RxCross2
+                onClick={() => handleDone(todo.id)}
+                className="hover:cursor-pointer"
+              />
             ) : (
-              <MdOutlineDone onClick={() => handleDone(todo.id)} />
+              <MdOutlineDone
+                onClick={() => handleDone(todo.id)}
+                className="hover:cursor-pointer"
+              />
             )}
           </div>
         </form>

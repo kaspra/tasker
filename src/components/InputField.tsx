@@ -9,7 +9,7 @@ interface Props {
 const InputField: React.FC<Props> = ({ todo, setTodo, handleAddTodos }) => {
   return (
     <form
-      className="relative mt-4 flex w-[90dvw] md:w-96 items-center"
+      className="relative mt-4 flex w-[90dvw] md:w-96 items-center border-2 rounded-lg"
       onSubmit={handleAddTodos}
     >
       <input
@@ -21,7 +21,7 @@ const InputField: React.FC<Props> = ({ todo, setTodo, handleAddTodos }) => {
       />
       <button
         type="submit"
-        className="absolute right-0 border-none rounded-lg bg-blue-500 text-white font-semibold p-2 mr-2 hover:bg-blue-700"
+        className="absolute right-0 border-none rounded-lg bg-[#16a34a] text-white font-semibold p-2 mr-2 hover:bg-[#0f6e32]"
       >
         GO
       </button>

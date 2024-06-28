@@ -71,8 +71,8 @@ const App: React.FC = () => {
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>
-      <div className="flex flex-grow justify-start items-center bg-blue-600 py-10 px-12 flex-col w-[100vw] min-h-[100vh]">
-        <h1 className="font-bold text-3xl uppercase text-white">Tasker</h1>
+      <div className="flex flex-grow justify-start items-center  py-10 px-12 flex-col w-[100vw] min-h-[100vh]">
+        <h1 className="font-bold text-3xl uppercase text-[#16a34a]">Tasker</h1>
         <InputField
           todo={todo}
           setTodo={setTodo}
